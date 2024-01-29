@@ -30,6 +30,6 @@ public class RabinKarpVersion2 {
         }
     }
     public static void main(String[] args) {
-         search("abcddabcd","abcd");
+         search("cddacddcdd","cdd");
     }
 }
