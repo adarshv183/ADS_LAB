@@ -2,21 +2,22 @@ import java.util.Scanner;
 
 public class RabinKarpAlgorithm{
 
-    public static int getAlphabetValue(char ch) {
-        ch = Character.toLowerCase(ch);
-        if (Character.isLetter(ch)) {
-            return ch - 'a' + 1;
-        } else {
-            // Return -1 for non-alphabetic characters
-            return -1;
-        }
-    }
+//    public static int getAlphabetValue(char ch) {
+//        ch = Character.toLowerCase(ch);
+//        if (Character.isLetter(ch)) {
+//            return ch - 'a' + 1;
+//        } else {
+//            // Return -1 for non-alphabetic characters
+//            return -1;
+//        }
+//    }
     private static void searchPattern(String text, String pattern, int d, int q)
     {
         int n = text.length(), m = pattern.length();
         int p = 0, t = 0;
         int h = 1;
 
+//        hash function
         for (int i = 0; i < m - 1; i++) {
             h = (h * d) % q;
         }
