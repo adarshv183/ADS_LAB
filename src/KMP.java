@@ -43,7 +43,7 @@ public class KMP {
                     length = lps[length-1];
                 }else{
                     lps[i] = 0;
-                    i += 1;
+                    i = i + 1;
                 }
             }
         }
